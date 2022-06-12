@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_activity_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20px"
+        android:textColor="@color/purple_500"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:text="@string/spin_wheel_title"/>
+
+    <TextView
+        android:id="@+id/subHeaderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#6A696A"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/subheader_text"
+        android:layout_below="@id/headerTextView"/>
+
+    <Button
+        android:id="@+id/spinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/spin_button" />
+
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:text=""/>
+
+    <ImageView
+        android:id="@+id/wheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/wheel"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:id="@+id/triangle"
+        android:layout_width="25dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/wheel"
+        android:layout_marginBottom="-40dp"
+        app:srcCompat="@drawable/target"
+        />
+
+</RelativeLayout>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:src="@drawable/wheel"
+        android:id="@+id/imageView_ring"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:rotation="-34"
+        app:srcCompat="@drawable/wheel"/>
+</LinearLayout>-->
+
+<!--
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuWheelGuidline"
+        app:layout_constraintGuide_begin="10dp"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spin the Wheel"
+        android:layout_marginTop="20px"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and win coupons"
+        android:layout_marginTop="20px"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView_ring"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="56dp"
+        android:rotation="-34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/wheel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>-->
